@@ -1,0 +1,15 @@
+.modal_comun {
+  z-index: 100000;
+}
+
+.modal_sesionExpirada {
+  z-index: 100001;
+}
+
+.swal2-container {
+  z-index: 100002;
+}
+
+.swal2-input {
+  z-index: 100002;
+}

@@ -1,0 +1,70 @@
+<!-- Modal -->
+<div class="modal modal_comun modal-xl fade" id="modal_internosMail" data-bs-backdrop="static" data-bs-keyboard="false"
+    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header bg-info">
+                <img class="me-2" src="http://192.168.1.15/vida_home/assets/img/modals/iconreclamosmodal.png"
+                    style="width:50px; vertical-align:middle;">
+                <h1 class="modal-title fw-bolder fs-5" id="staticBackdropLabel">Información Interna </h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+
+                <nav class="mb-4">
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                        <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab"
+                            data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home"
+                            aria-selected="true">Información Central</button>
+                        <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
+                            type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Información
+                            Filiales</button>
+                    </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"
+                        tabindex="0">
+                        <div class="table-responsive">
+                            <table id="tabla_informacion_central" class="display" style="width:100%">
+                                <thead class="bg-dark text-white">
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Interno</th>
+                                        <th>Nombre</th>
+                                        <th>Sector</th>
+                                        <th>Correo Electrónico</th>
+                                        <th>Departamento/País</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="table-bordered table-striped-columns">
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab"
+                        tabindex="0">
+                        <div class="table-responsive">
+                            <table id="tabla_informacion_filiales" class="display" style="width:100%">
+                                <thead class="bg-dark text-white">
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Filial</th>
+                                        <th>Interno</th>
+                                        <th>Correo Electrónico</th>
+                                        <th>Departamento/País</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="table-bordered table-striped-columns">
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>

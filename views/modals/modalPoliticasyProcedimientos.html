@@ -1,0 +1,84 @@
+<!-- MODAL PROCEDIMIENTOS Y POLITICAS -->
+<div id="procedimientosypoliticas" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top">
+
+        <header class="w3-container w3-teal">
+            <span onclick="document.getElementById('procedimientosypoliticas').style.display='none'"
+                class="w3-button w3-display-topright">&times;</span>
+            <h2>
+                <img src="assets/img/iconreclamosmodal.png" style="width:50px; vertical-align:middle;"> Procedimientos y
+                Políticas de Seguridad
+            </h2>
+        </header>
+
+        <div class="w3-container text-center">
+            <br />
+            <button class="boton"
+                onclick="window.open('http://192.168.1.12/acceso/politicas-y-procedimientos-coordinacion.html');">Conciencia
+                por la Calidad - <b>Coordinación</b></button>
+            <button class="boton"
+                onclick="window.open('http://192.168.1.12/acceso/politicas-y-procedimientos-controladora.html');">Conciencia
+                por la Calidad - <b>Controladora</b></button>
+            <button class="boton"
+                onclick="window.open('http://192.168.1.12/acceso/politicas-y-procedimientos-acompanante.html');">Conciencia
+                por la Calidad - <b>Acompañante</b></button><br />
+            <button class="boton"
+                onclick="window.open('http://192.168.1.12/acceso/politicas-y-procedimientos-asuntosinternos.html');">Conciencia
+                por la Calidad - <b>Asuntos Internos</b></button>
+            <button class="boton"
+                onclick="window.open('http://192.168.1.12/acceso/politicas-y-procedimientos-calidad.html');">Conciencia
+                por la Calidad - <b>Calidad</b></button>
+            <button class="boton"
+                onclick="window.open('http://192.168.1.12/acceso/politicas-y-procedimientos-supervicion.html');">Conciencia
+                por la Calidad - <b>Supervición</b></button><br />
+            <button class="boton"
+                onclick="window.open('http://192.168.1.12/acceso/politicas-y-procedimientos-rrhh-reclutamiento.html');">Conciencia
+                por la Calidad - <b>RRHH - Reclutamiento</b></button>
+            <button class="boton"
+                onclick="window.open('http://192.168.1.12/acceso/politicas-y-procedimientos-supervisoradesalon.html');">Conciencia
+                por la Calidad - <b>Supervisora de Salón</b></button>
+            <button class="boton"
+                onclick="window.open('http://192.168.1.12/acceso/politicas-y-procedimientos-viaticos.html');">Conciencia
+                por la Calidad - <b>Viáticos</b></button><br />
+            <button class="boton"
+                onclick="window.open('http://192.168.1.12/acceso/politicas-y-procedimientos-tomapedidos.html');">Conciencia
+                por la Calidad - <b>Toma Pedidos</b></button>
+            <button class="boton"
+                onclick="window.open('http://192.168.1.12/acceso/politicas-y-procedimientos-visitadora.html');">Conciencia
+                por la Calidad - <b>Visitadora</b></button>
+            <br /><br /><br />
+        </div>
+
+        <div class="w3-container w3-teal">
+            <p></p>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+<div class="modal modal_sesionExpirada modal-lg fade" id="modal_sesionExpirada" data-bs-backdrop="static"
+    data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header bg-danger">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Procedimientos y Políticas de Seguridad</h1>
+            </div>
+            <div class="modal-body">
+
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="txt_cedula_sesion_expirada"
+                        placeholder="Ingrese su cédula:" autofocus>
+                    <label for="txt_cedula_sesion_expirada">Ingrese su cédula:</label>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" onclick="extender_sesion()">Extender
+                    Sesión</button>
+            </div>
+        </div>
+    </div>
+</div>

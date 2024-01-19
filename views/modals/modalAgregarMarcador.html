@@ -1,0 +1,56 @@
+<!-- Modal -->
+<div class="modal modal_comun modal-lg fade" id="modal_agregarMarcador" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header bg-success">
+                <h1 class="modal-title fs-5 fw-bolder" id="exampleModalLabel">Agregar Marcador:</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="txt_titulo_marcador_agregar"
+                                placeholder="Título:">
+                            <label for="txt_titulo_marcador_agregar">Título:</label>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="txt_sub_titulo_marcador_agregar"
+                                placeholder="Sub Título:">
+                            <label for="txt_sub_titulo_marcador_agregar">Sub Título: (opcional)</label>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="txt_link_marcador_agregar" placeholder="Link:">
+                            <label for="txt_link_marcador_agregar">Link:</label>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="form-floating mb-3">
+                            <select class="form-select" id="txt_variante_marcador_agregar"
+                                aria-label="Seleccione una variante:">
+                            </select>
+                            <label for="txt_variante_marcador_agregar">Seleccione una variante:</label>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <div class="mb-3">
+                            <label for="txt_logo_marcador_agregar" class="form-label">Logo:</label>
+                            <input class="form-control" type="file" id="txt_logo_marcador_agregar">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-primary" onclick="agregar_marcador()">Guardar</button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,36 @@
+<!-- Modal -->
+<div class="modal modal_comun modal-lg fade" id="modal_agregarMarcadorPorArea" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header bg-success">
+                <h1 class="modal-title fs-5 fw-bolder" id="exampleModalLabel">Agregar Marcador Por Área:</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <div class="form-floating mb-4">
+                            <select class="form-select" id="select_areas_marcador_por_area">
+                            </select>
+                            <label for="select_areas_marcador_por_area">Seleccione un área:</label>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <div class="form-floating mb-3">
+                            <select class="form-select" id="select_marcadores">
+                            </select>
+                            <label for="select_marcadores">Seleccione un marcador:</label>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-primary" onclick="agregar_marcador_x_area()">Guardar</button>
+            </div>
+        </div>
+    </div>
+</div>

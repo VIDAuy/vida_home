@@ -1,0 +1,80 @@
+<!-- Modal -->
+<div class="modal modal_comun modal-xl fade" id="modal_editarFilial" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header bg-primary">
+                <h1 class="modal-title fs-5 fw-bolder" id="exampleModalLabel">Editar Filial:</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+
+                <input type="hidden" id="txt_filial_id_editar">
+
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="txt_filial_nombre_editar" placeholder="Nombre:">
+                            <label for="txt_filial_nombre_editar">Nombre:</label>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="form-floating mb-3">
+                            <select class="form-select" id="txt_filial_departamento_editar" aria-label="Departamento:">
+                            </select>
+                            <label for="txt_filial_departamento_editar">Seleccione un departamento:</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="alert alert-secondary border-secondary" role="alert">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <div class="table-responsive">
+                                <div class="d-flex justify-content-end mb-2">
+                                    <button class="btn btn-sm btn-success"
+                                        onclick="agregar_email_filial(true)">➕</button>
+                                </div>
+                                <table id="tabla_administrar_emails_filial" class="display" style="width:100%">
+                                    <thead class="bg-dark text-white">
+                                        <tr>
+                                            <th>#</th>
+                                            <th>Email</th>
+                                            <th>Acciones</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="table-bordered table-striped-columns">
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <div class="table-responsive">
+                                <div class="d-flex justify-content-end mb-2">
+                                    <button class="btn btn-sm btn-success"
+                                        onclick="agregar_interno_filial(true)">➕</button>
+                                </div>
+                                <table id="tabla_administrar_internos_filial" class="display" style="width:100%">
+                                    <thead class="bg-dark text-white">
+                                        <tr>
+                                            <th>#</th>
+                                            <th>Interno</th>
+                                            <th>Acciones</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="table-bordered table-striped-columns">
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-primary" onclick="editar_datos_filial()">Guardar</button>
+            </div>
+        </div>
+    </div>
+</div>
