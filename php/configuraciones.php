@@ -8,8 +8,8 @@ define("PATH_APP", __DIR__);
 
 const PRODUCCION = true; // para definir si es test o producción la APP
 
-$URL_LOGOS = "http://192.168.1.15/vida_home/assets/img/logos/";
-$URL_ASSETS = "http://192.168.1.15/vida_home/assets/";
+$URL_LOGOS = "http://192.168.1.13/vida_home/assets/img/logos/";
+$URL_ASSETS = "http://192.168.1.13/vida_home/assets/";
 
 error_reporting(PRODUCCION ? 0 : E_ALL);
 
@@ -43,12 +43,12 @@ include_once "utils.php";
 
 // DB
 // DB PRODUCCION
-const DB_PROD = array("host" => "192.168.1.15", "user" => "root", "password" => "sist.2k8", "db" => "vida_home");
+const DB_PROD = array("host" => "192.168.1.13", "user" => "root", "password" => "sist.2k8", "db" => "vida_home");
 
 
 
 //DEV O DB TEST
-const DB_TEST = array("host" => "192.168.1.15", "user" => "root", "password" => "sist.2k8", "db" => "vida_home");
+const DB_TEST = array("host" => "192.168.1.13", "user" => "root", "password" => "sist.2k8", "db" => "vida_home");
 
 
 //BD PROD O TEST

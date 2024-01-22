@@ -2,7 +2,7 @@ const PRODUCCION = true;
 
 const version = "1.0.2";
 const PROTOCOLO = 'http';
-const SERVER = '192.168.1.15';
+const SERVER = '192.168.1.13';
 const NAME_APP = 'vida_home';
 
 //URLs
